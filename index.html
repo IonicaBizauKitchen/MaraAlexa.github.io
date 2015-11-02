@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="title">
+            <h4>Hoeveel extensions heb ik nodig</h4>
+        </div>
+        <form id="step_one" name="step_one">
+            <div id="gewenste-lengte">
+                <div class="title-box">
+                    <span>Gewenste lengte</span>
+                </div>
+                <div class="align-left">
+                    <span class="gewenste-lengte"><input class="g-lengte" id="gl30" name="gl" onclick="refresh()" type="radio" value="0"><small>30cm</small></span>
+
+                    <span class="gewenste-lengte"><input class="g-lengte" id="gl40" name="gl" onclick="refresh()" type="radio" value="1"><small>40cm</small></span>
+
+                    <span class="gewenste-lengte"><input class="g-lengte" id="gl50" name="gl" onclick="refresh()" type="radio" value="2"><small>50cm</small></span>
+
+                    <span class="gewenste-lengte"><input class="g-lengte" id="gl60" name="gl" onclick="refresh()" type="radio" value="3"><small>60cm</small></span>
+
+                    <span class="gewenste-lengte"><input class="g-lengte" id="gl70" name="gl" onclick="refresh()" type="radio" value="4"><small>70cm</small></span>
+                </div>
+            </div>
+            <div id="dikte_van_je_haar">
+                <div class="title-box">
+                    <span>Eigen haarlengte</span>
+                </div>
+                <div class="align-left">
+                    <span class="dikte_van_je_haar"><input class="eigen-lengte"
+                    id="el20" name="el" onclick="refresh()" type="radio" value=
+                    "0"><small>20cm</small></span> <span class=
+                    "dikte_van_je_haar"><input class="eigen-lengte" id="el30"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "1"><small>30cm</small></span><span class=
+                    "dikte_van_je_haar"><input class="eigen-lengte" id="el40"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "2"><small>40cm</small></span> <span class=
+                    "dikte_van_je_haar"><input class="eigen-lengte" id="el50"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "3"><small>50cm</small></span>
+                </div>
+            </div>
+            <div id="hoofd_grootte">
+                <div class="title-box">
+                    <span>Dikte van je haar</span>
+                </div>
+                <div class="align-left">
+                    <span><input class="dikte-haar" id="dun" name="dh" onclick=
+                    "refresh()" type="radio" value=
+                    "0"><small>Dun</small></span> <span><input class=
+                    "dikte-haar" id="normaal" name="dh" onclick="refresh()"
+                    type="radio" value=
+                    "1"><small>Normaal</small></span><span><input class=
+                    "dikte-haar" id="dik" name="dh" onclick="refresh()" type=
+                    "radio" value="2"><small>Dik</small></span>
+                </div>
+            </div>
+        </form>
+        <div></div>
+        <div class="advies">
+            <p class="advies-text"> <input id="numberOfExtensions" type="text" disabled></p>
+        </div>
+        <div class="kiesJeMerk">
+            <ul >
+                <li>
+                    <a href="http://www.greathairextensions.nl/great-hair-extensions">
+                      <img alt=""src="img/great-hair.png">
+                      <input class="numberOfPackets" id="firstPk" type="text" disabled>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.greathairextensions.nl/euro-socap">
+                      <img alt=""src="img/soCap.png">
+                      <input class="numberOfPackets" id="secondPk" type="text" disabled>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.greathairextensions.nl/di-biase-hair">
+                      <img alt="" src="img/diBiase.png">
+                      <input class="numberOfPackets" id="thirdPk" type="text" disabled>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.greathairextensions.nl/balmain">
+                      <img alt=""src="img/balmain.png">
+                      <input class="numberOfPackets" id="fourthPk" type="text" disabled>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js" type=
+    "application/javascript"></script>
+    <script src="js/app.js" type="application/javascript"></script>
+
+</body>
+</html>

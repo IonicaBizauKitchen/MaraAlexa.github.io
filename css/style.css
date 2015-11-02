@@ -1,0 +1,133 @@
+.align-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 45vw;
+  max-width: 350px; }
+
+.calculator {
+  width: 100%;
+  max-width: 1200px; }
+
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background: #ef566b;
+  width: 65.15%;
+  margin-bottom: -18px; }
+  .title h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px; }
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  max-width: 200px;
+  margin-left: 60px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+form#step_one {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 65%;
+  border: 2px solid rgba(128, 128, 128, 0.23);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+  cursor: hand; }
+  form#step_one #gewenste-lengte, form#step_one #dikte_van_je_haar, form#step_one #hoofd_grootte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    height: 48px; }
+    form#step_one #gewenste-lengte:hover, form#step_one #dikte_van_je_haar:hover, form#step_one #hoofd_grootte:hover {
+      background: rgba(128, 128, 128, 0.1); }
+  form#step_one #gewenste-lengte, form#step_one #dikte_van_je_haar {
+    border-bottom: 5px solid #EF566B; }
+
+span, small {
+  align-self: center;
+  font-weight: bold;
+  color: gray;
+  margin-right: 10%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+span {
+  font-size: 0.85rem; }
+
+small {
+  font-size: 0.7rem; }
+
+p.advies-text {
+  color: black;
+  margin-left: 5px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px; }
+
+#kiesJeMerk {
+  width: 65%; }
+
+#numberOfExtensions {
+  border: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.center {
+  text-align: center; }
+
+.kiesJeMerk {
+  width: 65%; }
+  .kiesJeMerk ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 0; }
+    .kiesJeMerk ul li {
+      border: 2px solid gray;
+      margin-right: 20px;
+      margin-left: 0;
+      padding: 0;
+      width: 110px;
+      height: 40px; }
+      .kiesJeMerk ul li img {
+        width: 110px;
+        height: 40px; }
+    .kiesJeMerk ul li a input {
+      width: 100px;
+      margin-left: 5px;
+    }
+
+.numberOfPackets {
+  border: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#firstPk, #secondPk, #thirdPk, #fourthPk {
+  cursor: pointer;
+  color: #167ac6;
+
+}
+#firstPk:hover, #secondPk:hover, #thirdPk:hover, #fourthPk:hover{
+  text-decoration: underline;
+}
