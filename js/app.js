@@ -4,8 +4,8 @@ var refresh = function() {
   var el = $('input[name=el]:checked').val();
   var dh = $('input[name=dh]:checked').val();
 
-  var volume = 'voor extra volume adviseren wij ca. 50-75';
-  var geenExt = 'wij adviseren met deze eigen haarlengte en de gewenste lengte geen';
+  var volume = 'voor extra volume ca. 50-75';
+  var geenExt = 'met deze eigen haarlengte en de gewenste lengte GEEN';
   var t = [[
           [  25,      50,     75],
           [ volume, volume, volume],
@@ -50,23 +50,23 @@ var refresh = function() {
       $('#fourthPk').val(2+ ' packets');
     }
 
-    if (results === geenExt) {
-      $('#firstPk').val('not available');
-      $('#secondPk').val('not available');
-      $('#thirdPk').val('not available');
-      $('#fourthPk').val('not available');
-    }
+
 
     if (gl == 3) {
       $('#secondPk').val('not available');
     }
-
+    
     if (gl == 4) {
       $('#secondPk').val('not available');
       $('#thirdPk').val('not available');
       $('#fourthPk').val('not available');
     }
-
+    if (results === geenExt) {
+      $('#firstPk').val('');
+      $('#secondPk').val('');
+      $('#thirdPk').val('');
+      $('#fourthPk').val('');
+    }
 
   } // end main if statement
 
