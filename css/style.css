@@ -1,9 +1,13 @@
-.align-left {
+.box-buttons {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 45vw;
-  max-width: 350px; }
+  margin-left: 20px
+   }
+.box-buttons#el {
+  margin-left: 59px;
+}
+.box-buttons#dh {
+  margin-left: 100px;
+}
 
 .calculator {
   width: 100%;
@@ -25,50 +29,93 @@
 .title-box {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  max-width: 200px;
-  margin-left: 60px;
+  width: 140px;
+  max-width: 140px;
+  margin-left: 30px;
   justify-content: center;
   flex-wrap: wrap; }
 
 form#step_one {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 65%;
   border: 2px solid rgba(128, 128, 128, 0.23);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-collapse: collapse;
   white-space: nowrap;
   font-size: 14px;
   cursor: pointer;
   cursor: hand; }
-  form#step_one #gewenste-lengte, form#step_one #dikte_van_je_haar, form#step_one #hoofd_grootte {
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+    color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:13px;
+    height:13px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  5%;
+    border-radius:  50%;
+
+    background-color:  #e3d6d8;
+
+    border: solid 1px #8f3340;
+    padding: 7px;
+    background-clip: content-box;
+}
+
+input[type="radio"] + label span {
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#d74d60;
+
+     border: solid 1px #8f3340;
+     padding: 7px;
+     background-clip: content-box;
+     width: 14px;
+     height: 14px;
+
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+  form#step_one #gewenste-lengte, form#step_one #eigen-haarlengte, form#step_one #dikte_van_je_haar {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     padding: 10px 0;
     height: 48px; }
-    form#step_one #gewenste-lengte:hover, form#step_one #dikte_van_je_haar:hover, form#step_one #hoofd_grootte:hover {
-      background: rgba(128, 128, 128, 0.1); }
-  form#step_one #gewenste-lengte, form#step_one #dikte_van_je_haar {
+    form#step_one #gewenste-lengte:hover, form#step_one #eigen-haarlengte:hover, form#step_one #dikte_van_je_haar:hover {
+      background: rgba(227, 214, 216, 0.3); }
+  form#step_one #gewenste-lengte, form#step_one #eigen-haarlengte {
     border-bottom: 5px solid #EF566B; }
 
-span, small {
+label {
   align-self: center;
   font-weight: bold;
   color: gray;
-  margin-right: 10%;
-  font-family: Arial, Helvetica, sans-serif; }
+  margin-right: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
 
-span {
-  font-size: 0.85rem; }
 
-small {
-  font-size: 0.7rem; }
+
+
 
 p.advies-text {
   color: black;

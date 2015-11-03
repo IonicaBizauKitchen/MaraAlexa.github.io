@@ -11,52 +11,57 @@
         <form id="step_one" name="step_one">
             <div id="gewenste-lengte">
                 <div class="title-box">
-                    <span>Gewenste lengte</span>
+                    <label>Gewenste lengte</label>
                 </div>
-                <div class="align-left">
-                    <span class="gewenste-lengte"><input class="g-lengte" id="gl30" name="gl" onclick="refresh()" type="radio" value="0"><small>30cm</small></span>
+                <div class="box-buttons" id="gl">
+                    <input class="g-lengte" id="gl30" name="gl" onclick="refresh()" type="radio" value="0"><label for="gl30"><span></span>30cm</label>
 
-                    <span class="gewenste-lengte"><input class="g-lengte" id="gl40" name="gl" onclick="refresh()" type="radio" value="1"><small>40cm</small></span>
+                    <input class="g-lengte" id="gl40" name="gl" onclick="refresh()" type="radio" value="1"><label for="gl40"><span></span>40cm</label>
 
-                    <span class="gewenste-lengte"><input class="g-lengte" id="gl50" name="gl" onclick="refresh()" type="radio" value="2"><small>50cm</small></span>
+                    <input class="g-lengte" id="gl50" name="gl" onclick="refresh()" type="radio" value="2"><label for="gl50"><span></span>50cm</label>
 
-                    <span class="gewenste-lengte"><input class="g-lengte" id="gl60" name="gl" onclick="refresh()" type="radio" value="3"><small>60cm</small></span>
+                    <input class="g-lengte" id="gl60" name="gl" onclick="refresh()" type="radio" value="3"><label for="gl60"><span></span>60cm</label>
 
-                    <span class="gewenste-lengte"><input class="g-lengte" id="gl70" name="gl" onclick="refresh()" type="radio" value="4"><small>70cm</small></span>
+                    <input class="g-lengte" id="gl70" name="gl" onclick="refresh()" type="radio" value="4"><label for="gl70"><span></span>70cm</label>
+                </div>
+            </div>
+            <div id="eigen-haarlengte">
+                <div class="title-box">
+                    <label>Eigen haarlengte</label>
+                </div>
+
+                <div class="box-buttons" id="el">
+                    <input class="eigen-lengte"
+                    id="el20" name="el" onclick="refresh()" type="radio" value=
+                    "0"><label for="el20"><span></span>20cm</label>
+
+                    <input class="eigen-lengte" id="el30"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "1"><label for="el30"><span></span>30cm</label>
+
+                    <input class="eigen-lengte" id="el40"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "2"><label for="el40"><span></span>40cm</label>
+
+                    <input class="eigen-lengte" id="el50"
+                    name="el" onclick="refresh()" type="radio" value=
+                    "3"><label for="el50"><span></span>50cm</label>
+
                 </div>
             </div>
             <div id="dikte_van_je_haar">
                 <div class="title-box">
-                    <span>Eigen haarlengte</span>
+                    <label>Dikte van je haar</label>
                 </div>
-                <div class="align-left">
-                    <span class="dikte_van_je_haar"><input class="eigen-lengte"
-                    id="el20" name="el" onclick="refresh()" type="radio" value=
-                    "0"><small>20cm</small></span> <span class=
-                    "dikte_van_je_haar"><input class="eigen-lengte" id="el30"
-                    name="el" onclick="refresh()" type="radio" value=
-                    "1"><small>30cm</small></span><span class=
-                    "dikte_van_je_haar"><input class="eigen-lengte" id="el40"
-                    name="el" onclick="refresh()" type="radio" value=
-                    "2"><small>40cm</small></span> <span class=
-                    "dikte_van_je_haar"><input class="eigen-lengte" id="el50"
-                    name="el" onclick="refresh()" type="radio" value=
-                    "3"><small>50cm</small></span>
-                </div>
-            </div>
-            <div id="hoofd_grootte">
-                <div class="title-box">
-                    <span>Dikte van je haar</span>
-                </div>
-                <div class="align-left">
-                    <span><input class="dikte-haar" id="dun" name="dh" onclick=
-                    "refresh()" type="radio" value=
-                    "0"><small>Dun</small></span> <span><input class=
-                    "dikte-haar" id="normaal" name="dh" onclick="refresh()"
-                    type="radio" value=
-                    "1"><small>Normaal</small></span><span><input class=
-                    "dikte-haar" id="dik" name="dh" onclick="refresh()" type=
-                    "radio" value="2"><small>Dik</small></span>
+                <div class="box-buttons" id="dh">
+                    <input class="dikte-haar" id="dun" name="dh" onclick=
+                    "refresh()" type="radio" value="0"><label for="dun"><span></span>Dun</label>
+
+                    <input class="dikte-haar" id="normaal" name="dh" onclick="refresh()"
+                    type="radio" value="1"><label for="normaal"><span></span>Normaal</label>
+
+                    <input class="dikte-haar" id="dik" name="dh" onclick="refresh()" type=
+                    "radio" value="2"><label for="dik"><span></span>Dik</label>
                 </div>
             </div>
         </form>
