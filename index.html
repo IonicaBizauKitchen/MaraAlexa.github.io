@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html>
 <head>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="calculator">
-        <div class="title">
+    <div class="calculator-container">
+        <div class="title-calculator">
             <h4>Hoeveel extensions heb ik nodig</h4>
         </div>
         <form id="step_one" name="step_one">
             <div id="gewenste-lengte">
                 <div class="title-box">
-                    <label>Gewenste lengte</label>
+                    <div class="title-label">Gewenste lengte</div>
                 </div>
                 <div class="box-buttons" id="gl">
                     <input class="g-lengte" id="gl30" name="gl" onclick="refresh()" type="radio" value="0"><label for="gl30"><span></span>30cm</label>
@@ -20,14 +19,14 @@
 
                     <input class="g-lengte" id="gl50" name="gl" onclick="refresh()" type="radio" value="2"><label for="gl50"><span></span>50cm</label>
 
-                    <input class="g-lengte" id="gl60" name="gl" onclick="refresh()" type="radio" value="3"><label for="gl60"><span></span>60cm</label>
+                    <input class="g-lengte" id="gl60" name="gl" onclick="refresh()" type="radio" value="3"><label for="gl60" id="gl60"><span></span>60cm</label>
 
                     <input class="g-lengte" id="gl70" name="gl" onclick="refresh()" type="radio" value="4"><label for="gl70"><span></span>70cm</label>
                 </div>
             </div>
             <div id="eigen-haarlengte">
                 <div class="title-box">
-                    <label>Eigen haarlengte</label>
+                    <div class="title-label">Eigen haarlengte</div>
                 </div>
 
                 <div class="box-buttons" id="el">
@@ -41,17 +40,17 @@
 
                     <input class="eigen-lengte" id="el40"
                     name="el" onclick="refresh()" type="radio" value=
-                    "2"><label for="el40"><span></span>40cm</label>
+                    "2"><label for="el40" id=""><span></span>40cm</label>
 
                     <input class="eigen-lengte" id="el50"
                     name="el" onclick="refresh()" type="radio" value=
-                    "3"><label for="el50"><span></span>50cm</label>
+                    "3"><label for="el50" id="el50"><span></span>50cm</label>
 
                 </div>
             </div>
             <div id="dikte_van_je_haar">
                 <div class="title-box">
-                    <label>Dikte van je haar</label>
+                    <div class="title-label">Dikte van je haar</div>
                 </div>
                 <div class="box-buttons" id="dh">
                     <input class="dikte-haar" id="dun" name="dh" onclick=
@@ -65,40 +64,38 @@
                 </div>
             </div>
         </form>
-        <div></div>
         <div class="advies">
             <p class="advies-text"> <input id="numberOfExtensions" type="text" ></p>
         </div>
+
         <div class="kiesJeMerk">
             <ul >
                 <li>
                     <a href="http://www.greathairextensions.nl/great-hair-extensions">
-                      <img alt=""src="img/great-hair.png">
+                      <img id="great-hair" alt=""src="img/great-hair.jpg">
                       <input class="numberOfPackets" id="firstPk" type="text" >
                     </a>
                 </li>
                 <li>
                     <a href="http://www.greathairextensions.nl/euro-socap">
-                      <img alt=""src="img/soCap.png">
+                      <img id="eurosocap" alt=""src="img/eurosocap.jpg">
                       <input class="numberOfPackets" id="secondPk" type="text" >
                     </a>
                 </li>
                 <li>
                     <a href="http://www.greathairextensions.nl/di-biase-hair">
-                      <img alt="" src="img/diBiase.png">
+                      <img id="dibiase" alt="" src="img/dibiase.jpg">
                       <input class="numberOfPackets" id="thirdPk" type="text" >
                     </a>
                 </li>
                 <li>
                     <a href="http://www.greathairextensions.nl/balmain">
-                      <img alt=""src="img/balmain.png">
+                      <img id="balmain" alt=""src="img/balmain.jpg">
                       <input class="numberOfPackets" id="fourthPk" type="text" >
                     </a>
                 </li>
             </ul>
         </div>
-
-
 
     </div>
 

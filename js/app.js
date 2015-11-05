@@ -1,3 +1,4 @@
+
 var refresh = function() {
 
   var gl = $('input[name=gl]:checked').val();
@@ -55,7 +56,7 @@ var refresh = function() {
     if (gl == 3) {
       $('#secondPk').val('not available');
     }
-    
+
     if (gl == 4) {
       $('#secondPk').val('not available');
       $('#thirdPk').val('not available');
