@@ -56,20 +56,19 @@ var refresh = function() {
             $('#fourthPk').val(2 + ' packets');
         }
 
+        var notAvailable = [];
         if (gl == 3) {
-            $('#secondPk').val('not available');
+            notAvailable.push('#secondPk')
         }
 
         if (gl == 4) {
-            $('#secondPk').val('not available');
-            $('#thirdPk').val('not available');
-            $('#fourthPk').val('not available');
+            notAvailable.push('#thirdPk', '#fourthPk');
         }
+
+        $(notAvailable.join(",")).val('not available');
+
         if (results === geenExt) {
-            $('#firstPk').val('');
-            $('#secondPk').val('');
-            $('#thirdPk').val('');
-            $('#fourthPk').val('');
+            $('#firstPk,#secondPk,#thirdPk,#fourthPk').val('');
         }
 
     } // end main if statement
